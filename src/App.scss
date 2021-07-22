@@ -1,0 +1,112 @@
+.wrapper {
+  margin: 6em;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #45852d;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.filter-container {
+  display: flex;
+  margin: 0 0 0.5em 2.2em;
+  font-size: 2em;
+}
+
+.input {
+  margin-left: 1em;
+  border-radius: 16px;
+  outline: none;
+  border: 1px solid gray;
+  width: 25em;
+}
+
+.card {
+  flex: 1 0 350px;
+  max-width: 450px;
+  margin: 2em 2em 0 2em;
+  background-color: #f8f8f8;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.img-container {
+  position: relative;
+
+  &__item {
+    width: 100%;
+    z-index: 1;
+  }
+  &__subitem {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    bottom: 4px;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0.5em;
+    color: white;
+    background-color: rgb(40, 143, 108);
+  }
+}
+
+.card-body {
+  padding: 0 0 1em 1em;
+  &__title,
+  &__address,
+  &__text,
+  &__subtext {
+    text-align: start;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+  &__price {
+    color: black;
+    font-weight: 600;
+  }
+}
+
+.green {
+  background-color: #45852d;
+}
+
+.orangered {
+  background-color: orangered;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 0.7em 1.4em;
+  border: none;
+  color: #fff;
+  background-color: rgb(40, 143, 108);
+  margin-top: 2em;
+}
+
+button:hover {
+  color: black;
+  background-color: rgb(197, 117, 88);
+}
+
+.isLoading-container {
+  display: flex;
+  justify-content: center;
+  &__item {
+    font-size: 2em;
+    text-decoration: center;
+  }
+}
