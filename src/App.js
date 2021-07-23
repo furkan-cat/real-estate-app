@@ -10,14 +10,16 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   const changeHandler = (e) => {
-    var input = e.target.value;
-    const newdata = data.filter((item) =>
-      item.title
-        .toString()
-        .toLowerCase()
-        .includes(input.toString().toLowerCase())
-    );
-    setFilteredData(newdata);
+    if (filteredData != "" && filteredData.length >= 3) {
+      var input = e.target.value;
+      const newData = data.filter((item) =>
+        item.title
+          .toString()
+          .toLowerCase()
+          .includes(input.toString().toLowerCase())
+      );
+      setFilteredData(newData);
+    }
   };
 
   const showHandler = () => {
@@ -60,7 +62,7 @@ function App() {
       {isLoading ? (
         <div className="isLoading-container">
           <h1 className="isLoading-container__item">
-            Please wait when fetching prosses is loading!
+            Please wait when fetching proses is loading!
           </h1>
         </div>
       ) : (
@@ -84,7 +86,7 @@ function App() {
                   <h5 className="card-body__title">{item.title}</h5>
                   <p className="card-body__address">{item.address}</p>
                   <p className="card-body__text">
-                    New Propertoes for Sale from
+                    New Properties for Sale from
                     <span className="card-body__price"> £{item.price}</span>
                   </p>
                   <p className="card-body__subtext">
