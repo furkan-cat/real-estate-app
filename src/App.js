@@ -10,8 +10,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   const changeHandler = (e) => {
-    if (filteredData != "" && filteredData.length >= 3) {
-      var input = e.target.value;
+    var input = e.target.value;
+    if (input.length >= 3) {
       const newData = data.filter((item) =>
         item.title
           .toString()
@@ -19,6 +19,8 @@ function App() {
           .includes(input.toString().toLowerCase())
       );
       setFilteredData(newData);
+    } else {
+      setFilteredData(data);
     }
   };
 
