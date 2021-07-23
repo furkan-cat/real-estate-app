@@ -15,7 +15,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Type on the input field to see different houses by filtering method. There is a button which you can see more 3 houses on every clicking. Added local img to API. 
+Type on the input field to see different houses by filtering method. There is a button which you can see more 3 houses on every clicking. Added local img to API.
+
+Limitted amount of data returned from a API call via axios.
+Filtered data with 3 character limit
+See more (functional) button in order to see additional cards on the screen.
+Responsive design
+SCSS and BEM
+Added image url to API call.
 
 [Project-Demo](https://epic-euler-2d87f7.netlify.app)
 
